@@ -362,6 +362,22 @@ theme.set_highlights = function()
   hl(0, "gitcommitSummary", { fg = c.fg, bg = 'NONE' })
   hl(0, "gitcommitOverflow", { fg = c.red, bg = 'NONE' })
 
+  -- Telescope
+  hl(0, "TelescopeBorder", { fg = c.border, bg = c.float })
+  hl(0, "TelescopePromptBorder", { fg = c.cyan, bg = c.float })
+  hl(0, "TelescopeResultsBorder", { fg = c.purple, bg = c.float })
+  hl(0, "TelescopePreviewBorder", { fg = c.green, bg = c.float })
+  hl(0, "TelescopePromptNormal", { fg = c.fg, bg = c.float })
+  hl(0, "TelescopeResultsNormal", { fg = c.fg, bg = c.float })
+  hl(0, "TelescopePreviewNormal", { fg = c.fg, bg = c.float })
+  hl(0, "TelescopePromptPrefix", { fg = c.cyan, bg = 'NONE' })
+  hl(0, "TelescopeSelection", { fg = c.purple, bg = c.selection })
+  hl(0, "TelescopeSelectionCaret", { fg = c.purple, bg = c.selection })
+  hl(0, "TelescopeMatching", { fg = c.cyan, bg = 'NONE', bold = true })
+  hl(0, "TelescopePromptTitle", { fg = c.cyan, bg = 'NONE', bold = true })
+  hl(0, "TelescopeResultsTitle", { fg = c.purple, bg = 'NONE', bold = true })
+  hl(0, "TelescopePreviewTitle", { fg = c.green, bg = 'NONE', bold = true })
+
 end
 
 return theme
