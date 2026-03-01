@@ -288,6 +288,49 @@ theme.set_highlights = function()
   hl(0, "RainbowDelimiterViolet", { fg = c.purple, bg = 'NONE' })
   hl(0, "RainbowDelimiterCyan", { fg = c.cyan, bg = 'NONE' })
 
+  -- LSP Diagnostics
+  hl(0, "DiagnosticError", { fg = c.error, bg = 'NONE' })
+  hl(0, "DiagnosticWarn", { fg = c.warning, bg = 'NONE' })
+  hl(0, "DiagnosticInfo", { fg = c.info, bg = 'NONE' })
+  hl(0, "DiagnosticHint", { fg = c.hint, bg = 'NONE' })
+  hl(0, "DiagnosticOk", { fg = c.green, bg = 'NONE' })
+  
+  hl(0, "DiagnosticSignError", { fg = c.error, bg = 'NONE' })
+  hl(0, "DiagnosticSignWarn", { fg = c.warning, bg = 'NONE' })
+  hl(0, "DiagnosticSignInfo", { fg = c.info, bg = 'NONE' })
+  hl(0, "DiagnosticSignHint", { fg = c.hint, bg = 'NONE' })
+  hl(0, "DiagnosticSignOk", { fg = c.green, bg = 'NONE' })
+  
+  hl(0, "DiagnosticVirtualTextError", { fg = c.error, bg = 'NONE' })
+  hl(0, "DiagnosticVirtualTextWarn", { fg = c.warning, bg = 'NONE' })
+  hl(0, "DiagnosticVirtualTextInfo", { fg = c.info, bg = 'NONE' })
+  hl(0, "DiagnosticVirtualTextHint", { fg = c.hint, bg = 'NONE' })
+  hl(0, "DiagnosticVirtualTextOk", { fg = c.green, bg = 'NONE' })
+  
+  hl(0, "DiagnosticUnderlineError", { sp = c.error, undercurl = true })
+  hl(0, "DiagnosticUnderlineWarn", { sp = c.warning, undercurl = true })
+  hl(0, "DiagnosticUnderlineInfo", { sp = c.info, undercurl = true })
+  hl(0, "DiagnosticUnderlineHint", { sp = c.hint, undercurl = true })
+  hl(0, "DiagnosticUnderlineOk", { sp = c.green, undercurl = true })
+  
+  hl(0, "DiagnosticFloatingError", { fg = c.error, bg = 'NONE' })
+  hl(0, "DiagnosticFloatingWarn", { fg = c.warning, bg = 'NONE' })
+  hl(0, "DiagnosticFloatingInfo", { fg = c.info, bg = 'NONE' })
+  hl(0, "DiagnosticFloatingHint", { fg = c.hint, bg = 'NONE' })
+  hl(0, "DiagnosticFloatingOk", { fg = c.green, bg = 'NONE' })
+
+  -- LSP References
+  hl(0, "LspReferenceText", { bg = c.selection })
+  hl(0, "LspReferenceRead", { bg = c.selection })
+  hl(0, "LspReferenceWrite", { bg = c.selection })
+
+  -- LSP Signature Help
+  hl(0, "LspSignatureActiveParameter", { fg = c.yellow, bg = 'NONE', bold = true })
+
+  -- LSP Code Lens
+  hl(0, "LspCodeLens", { fg = c.comments, bg = 'NONE', italic = true })
+  hl(0, "LspCodeLensSeparator", { fg = c.disabled, bg = 'NONE' })
+
 end
 
 return theme
