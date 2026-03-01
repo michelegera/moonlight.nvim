@@ -388,6 +388,35 @@ theme.set_highlights = function()
   hl(0, "WhichKeyFloating", { fg = 'NONE', bg = c.float })
   hl(0, "WhichKeyValue", { fg = c.green, bg = 'NONE' })
 
+  -- BufferLine
+  hl(0, "BufferLineFill", { fg = 'NONE', bg = c.bg_alt })
+  hl(0, "BufferLineBackground", { fg = c.text, bg = c.bg_alt })
+  hl(0, "BufferLineBufferSelected", { fg = c.fg, bg = c.bg, bold = true })
+  hl(0, "BufferLineBufferVisible", { fg = c.fg, bg = c.bg_alt })
+  hl(0, "BufferLineIndicatorSelected", { fg = c.accent, bg = c.bg })
+  hl(0, "BufferLineModified", { fg = c.yellow, bg = c.bg_alt })
+  hl(0, "BufferLineModifiedSelected", { fg = c.yellow, bg = c.bg })
+  hl(0, "BufferLineModifiedVisible", { fg = c.yellow, bg = c.bg_alt })
+  hl(0, "BufferLineSeparator", { fg = c.bg_alt, bg = c.bg_alt })
+  hl(0, "BufferLineTab", { fg = c.text, bg = c.bg_alt })
+  hl(0, "BufferLineTabSelected", { fg = c.fg, bg = c.bg })
+
+  -- Dashboard
+  hl(0, "DashboardShortCut", { fg = c.blue, bg = 'NONE' })
+  hl(0, "DashboardHeader", { fg = c.purple, bg = 'NONE' })
+  hl(0, "DashboardCenter", { fg = c.cyan, bg = 'NONE' })
+  hl(0, "DashboardFooter", { fg = c.green, bg = 'NONE', italic = true })
+  hl(0, "DashboardKey", { fg = c.orange, bg = 'NONE' })
+  hl(0, "DashboardDesc", { fg = c.blue, bg = 'NONE' })
+  hl(0, "DashboardIcon", { fg = c.cyan, bg = 'NONE' })
+
+  -- IndentBlankline
+  hl(0, "IndentBlanklineChar", { fg = c.active, bg = 'NONE' })
+  hl(0, "IndentBlanklineContextChar", { fg = c.purple, bg = 'NONE' })
+  hl(0, "IndentBlanklineContextStart", { sp = c.purple, underline = true })
+  hl(0, "IblIndent", { fg = c.active, bg = 'NONE' })
+  hl(0, "IblScope", { fg = c.purple, bg = 'NONE' })
+
 end
 
 return theme
