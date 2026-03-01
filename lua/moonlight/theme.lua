@@ -331,6 +331,37 @@ theme.set_highlights = function()
   hl(0, "LspCodeLens", { fg = c.comments, bg = 'NONE', italic = true })
   hl(0, "LspCodeLensSeparator", { fg = c.disabled, bg = 'NONE' })
 
+  -- Git Signs
+  hl(0, "GitSignsAdd", { fg = c.green, bg = 'NONE' })
+  hl(0, "GitSignsChange", { fg = c.yellow, bg = 'NONE' })
+  hl(0, "GitSignsDelete", { fg = c.red, bg = 'NONE' })
+  hl(0, "GitSignsAddNr", { fg = c.green, bg = 'NONE' })
+  hl(0, "GitSignsChangeNr", { fg = c.yellow, bg = 'NONE' })
+  hl(0, "GitSignsDeleteNr", { fg = c.red, bg = 'NONE' })
+  hl(0, "GitSignsAddLn", { fg = c.green, bg = 'NONE' })
+  hl(0, "GitSignsChangeLn", { fg = c.yellow, bg = 'NONE' })
+  hl(0, "GitSignsDeleteLn", { fg = c.red, bg = 'NONE' })
+  hl(0, "GitSignsAddInline", { fg = c.green, bg = 'NONE' })
+  hl(0, "GitSignsChangeInline", { fg = c.yellow, bg = 'NONE' })
+  hl(0, "GitSignsDeleteInline", { fg = c.red, bg = 'NONE' })
+  hl(0, "GitSignsCurrentLineBlame", { fg = c.comments, bg = 'NONE', italic = true })
+
+  -- Git (general)
+  hl(0, "gitcommitComment", { fg = c.comments, bg = 'NONE', italic = true })
+  hl(0, "gitcommitUnmerged", { fg = c.green, bg = 'NONE', bold = true })
+  hl(0, "gitcommitOnBranch", { fg = c.text, bg = 'NONE', bold = true })
+  hl(0, "gitcommitBranch", { fg = c.purple, bg = 'NONE', bold = true })
+  hl(0, "gitcommitDiscardedType", { fg = c.red, bg = 'NONE' })
+  hl(0, "gitcommitSelectedType", { fg = c.green, bg = 'NONE' })
+  hl(0, "gitcommitHeader", { fg = c.text, bg = 'NONE' })
+  hl(0, "gitcommitUntrackedFile", { fg = c.cyan, bg = 'NONE' })
+  hl(0, "gitcommitDiscardedFile", { fg = c.red, bg = 'NONE' })
+  hl(0, "gitcommitSelectedFile", { fg = c.green, bg = 'NONE' })
+  hl(0, "gitcommitUnmergedFile", { fg = c.yellow, bg = 'NONE', bold = true })
+  hl(0, "gitcommitFile", { fg = c.fg, bg = 'NONE', bold = true })
+  hl(0, "gitcommitSummary", { fg = c.fg, bg = 'NONE' })
+  hl(0, "gitcommitOverflow", { fg = c.red, bg = 'NONE' })
+
 end
 
 return theme
