@@ -378,6 +378,16 @@ theme.set_highlights = function()
   hl(0, "TelescopeResultsTitle", { fg = c.purple, bg = 'NONE', bold = true })
   hl(0, "TelescopePreviewTitle", { fg = c.green, bg = 'NONE', bold = true })
 
+  -- WhichKey
+  hl(0, "WhichKey", { fg = c.accent, bg = 'NONE', bold = true })
+  hl(0, "WhichKeyGroup", { fg = c.text, bg = 'NONE' })
+  hl(0, "WhichKeyDesc", { fg = c.blue, bg = 'NONE', italic = true })
+  hl(0, "WhichKeySeperator", { fg = c.fg, bg = 'NONE' })
+  hl(0, "WhichKeySeparator", { fg = c.fg, bg = 'NONE' })
+  hl(0, "WhichKeyFloat", { fg = 'NONE', bg = c.float })
+  hl(0, "WhichKeyFloating", { fg = 'NONE', bg = c.float })
+  hl(0, "WhichKeyValue", { fg = c.green, bg = 'NONE' })
+
 end
 
 return theme
